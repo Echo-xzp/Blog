@@ -44,7 +44,7 @@ def ping_bing(url_list):
     return response
 
 if __name__ == "__main__":
-    sitemap_path = "../../public/sitemap.xml"
+    sitemap_path = "public/sitemap.xml"
     url_list = get_latest_posts(sitemap_path, 10)
     # url_list.insert(0, f'https://{HOST}/')
     print(url_list)
