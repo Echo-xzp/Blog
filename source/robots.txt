@@ -5,7 +5,7 @@ Allow: /about/
 Disallow: /page/
 Disallow: /tags/
 Disallow: /archives/
-Disllow: /categories/
+Disallow: /categories/
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
