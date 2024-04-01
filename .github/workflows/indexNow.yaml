@@ -1,0 +1,36 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Submit IndexNow Request To Bing
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+  schedule:
+  # 定时任务，在每天的一点推送一下
+    - cron: '0 */2 * * *'
+  #   branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+
+jobs:
+  indexnow:
+    name: IndexNow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run script
+        run: |
+          cd .github/scripts
+          python indexNow.py
