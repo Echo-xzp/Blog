@@ -4,10 +4,10 @@ name: Submit IndexNow Request To Bing
 on:
   # Runs on pushes targeting the default branch
   push:
+      branches: ["hitagi"]
   schedule:
   # 定时任务，在每天的一点推送一下
-    - cron: '0 */2 * * *'
-  #   branches: ["main"]
+    - cron: '0 1 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
