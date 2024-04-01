@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import requests
 
 HOST = 'www.hitagi.icu'
-KEY = '0e52759f43d34d53847eaaadd6130adf'
+KEY = '5ba6dc01e9fb45919e0b708d37407ff1'
 
 def get_latest_posts(sitemap_path, n=10):
     # Parse the XML sitemap.
@@ -59,7 +59,9 @@ if __name__ == "__main__":
     # url_list.insert(0, f'https://{HOST}/')
     print(url_list)
 
+    print('提交index中....')
     response = ping_bing(url_list)
     # Print the response.
+    print('提交完成,返回结果如下:')
     print(response.status_code)
     print(response.text)
