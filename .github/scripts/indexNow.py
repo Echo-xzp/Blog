@@ -64,4 +64,4 @@ if __name__ == "__main__":
     # Print the response.
     print('提交完成,返回结果如下:')
     print(response.status_code)
-    print(response.text)
+    print(response.content)
