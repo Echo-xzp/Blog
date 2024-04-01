@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Allow:/posts/
+Allow: /posts/
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
@@ -9,5 +9,7 @@ Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
+Disallow: /img/
 Disallow: /fancybox/
+Disallow: /static/
 Sitemap: https://www.hitagi.icu/sitemap.xml
