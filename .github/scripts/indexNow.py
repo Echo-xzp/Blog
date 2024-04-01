@@ -7,8 +7,8 @@ KEY = '0e52759f43d34d53847eaaadd6130adf'
 def get_latest_posts(sitemap_path, n=10):
     # Parse the XML sitemap.
     url = sitemap_path  # 替换为你想要读取的具体 URL
-    with request.urlopen(url) as response:
-      xml_data = response.read()
+    with requests.get(url) as response:
+      xml_data = response.content()
     root = ET.fromstring(xml_data)
     # tree = ET.parse(sitemap_path)
     # root = tree.getroot()
