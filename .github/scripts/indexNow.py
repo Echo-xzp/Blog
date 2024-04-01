@@ -6,8 +6,12 @@ KEY = '0e52759f43d34d53847eaaadd6130adf'
 
 def get_latest_posts(sitemap_path, n=10):
     # Parse the XML sitemap.
-    tree = ET.parse(sitemap_path)
-    root = tree.getroot()
+    url = sitemap_path  # 替换为你想要读取的具体 URL
+    with request.urlopen(url) as response:
+      xml_data = response.read()
+    root = ET.fromstring(xml_data)
+    # tree = ET.parse(sitemap_path)
+    # root = tree.getroot()
 
     # Namespace dictionary to find the 'loc' and 'lastmod' tags.
     namespaces = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
@@ -44,7 +48,8 @@ def ping_bing(url_list):
     return response
 
 if __name__ == "__main__":
-    sitemap_path = "public/sitemap.xml"
+    # sitemap_path = "../../public/sitemap.xml"
+    sitemap_path = f"https://{HOST}/sitemap.xml"
     url_list = get_latest_posts(sitemap_path, 10)
     # url_list.insert(0, f'https://{HOST}/')
     print(url_list)
