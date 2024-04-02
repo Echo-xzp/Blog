@@ -5,7 +5,11 @@
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、簡單且強大的網誌框架
-
+    - name: June's Blog
+      link: https://blog.june-pj.cn/
+      avatar: https://img.june-pj.cn/img/avatar.webp
+      descr: 遇事不决，可问春风
+      siteshot: https://img.june-pj.cn/img/siteshot.webp
 - class_name: 網站
   class_desc: 值得推薦的網站
   link_list:
