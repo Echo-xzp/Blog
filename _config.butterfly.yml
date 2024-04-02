@@ -931,7 +931,9 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
-    # <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    # - <script type="module" src=''></script>
+    # - <script type="module"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
