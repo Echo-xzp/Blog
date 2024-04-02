@@ -959,7 +959,7 @@ CDN:
     # main:
     # utils:
     # jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
-    translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
+    # translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search:
     # algolia_js:
     # algolia_search:
