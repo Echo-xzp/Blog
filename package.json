@@ -13,6 +13,8 @@
     "version": "7.1.1"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "hexo": "^7.1.1",
     "hexo-abbrlink": "^2.2.1",
     "hexo-filter-nofollow": "^2.0.2",
