@@ -465,6 +465,7 @@ gitalk:
   repo: echo-xzp.github.io
   owner: echo-xzp
   admin: echo-xzp
+  proxy: https://cors-server.hitagi.icu/github_access_token
   option:
 
 # valine
