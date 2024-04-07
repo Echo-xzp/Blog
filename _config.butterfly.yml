@@ -461,7 +461,7 @@ livere:
 # https://github.com/gitalk/gitalk
 gitalk:
   client_id: c2e02f1625dd3048e2af
-  client_secret: ${GITALK_TOKEN}
+  client_secret: d211c277e6d59451c61a8e366d0da3e86495ebd9
   repo: echo-xzp.github.io
   owner: echo-xzp
   admin: echo-xzp
