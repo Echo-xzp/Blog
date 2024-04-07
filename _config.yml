@@ -131,3 +131,57 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
+bangumi: # 追番设置
+  enable: true
+  source: bangumi
+  bgmInfoSource: 'bgmApi'
+  path: bangumis/index.html
+  vmid: 764410
+  title: '追番'
+  quote: '其實，我也沒有上過學。'
+  show: 2
+  lazyload: false
+  srcValue: '__image__'
+  lazyloadAttrName: '__loading__'
+  loading:
+  showMyComment: true
+  pagination: false
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  order: latest
+  proxy:
+    host: false
+    port: false
+  extra_options:
+    key: value
+    lazyload:
+      enable: false
+cinema: # 追剧设置
+  enable: false
+  path:
+  vmid: 141314493
+  title: '追剧列表'
+  quote: '生命不息，追剧不止！'
+  show: 1
+  lazyload: true
+  srcValue: '__image__'
+  lazyloadAttrName: false
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  order:
+  extra_options:
+    key: value
+
+search: #搜索相關
+  path: search.xml
+  field: post
+  content: true
+  template:

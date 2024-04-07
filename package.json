@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo clean && hexo bangumi -u && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
@@ -13,15 +13,15 @@
     "version": "7.1.1"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.2.2",
-    "@vercel/speed-insights": "^1.0.10",
     "hexo": "^7.1.1",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-bilibili-bangumi": "^1.8.9",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
+    "hexo-generator-search": "^2.4.3",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
