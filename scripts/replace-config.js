@@ -6,7 +6,7 @@ const replace_config = () =>{
     const token = process.env.GITALK_TOKEN
     if (token !== undefined && token.length > 0) {
         console.log('替换TOKEN中......')
-        configData = configData.replace(/{GITALK_TOKEN}"/g,token)
+        configData = configData.replace(/{GITALK_TOKEN}/g,token)
         fs.writeFileSync('_config.butterfly.yml', configData, 'utf8')
         console.log('替换TOKEN完成')
     }
