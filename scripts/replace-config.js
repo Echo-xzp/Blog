@@ -1,13 +1,14 @@
 const fs = require('fs')
 
 const replace_config = () =>{
-    const configData = fs.readFileSync('_config.butterfly.yml', 'utf8')
+    let configData = fs.readFileSync('_config.butterfly.yml', 'utf8')
     
     const token = process.env.GITALK_TOKEN
     if (token !== undefined && token.length > 0) {
         console.log('替换TOKEN中......')
-        configData.replace('{GITALK_TOKEN}',token)
+        configData = configData.replace(/{GITALK_TOKEN"/g,'12345')
         fs.writeFileSync('_config.butterfly.yml', configData, 'utf8')
+        console.log('替换TOKEN完成')
     }
 }
 
