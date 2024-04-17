@@ -1,11 +1,22 @@
 ---
 title: Butterfly解决Gitalk密钥暴露的问题
-keywords: [Butterfly,Gitalk,Hexo,Vercle]
-date: 2024-04-08 10:42:19
-tags: [Butterfly,Gitalk,Hexo,Vercle,个人博客]
+keywords:
+  - Butterfly
+  - Gitalk
+  - Hexo
+  - Vercle
+tags:
+  - Butterfly
+  - Gitalk
+  - Hexo
+  - Vercle
+  - 个人博客
 categories: 杂项
+description: >-
+  Butterfly配置Gitalk,个人博客解决Gitalk密钥暴露的问题，点击登录Github的时候一直加载，最后直接超时报错了。用Koa来中间转发一下请求，然后利用函数接口部署成一个在线服务，一开始就感觉直接配置文件中写死Gitalk的secret是十分不安全的。
+abbrlink: 17b458ca
+date: 2024-04-08 10:42:19
 cover:
-description: Butterfly配置Gitalk,个人博客解决Gitalk密钥暴露的问题，点击登录Github的时候一直加载，最后直接超时报错了。用Koa来中间转发一下请求，然后利用函数接口部署成一个在线服务，一开始就感觉直接配置文件中写死Gitalk的secret是十分不安全的。
 ---
 
 # 问题描述
