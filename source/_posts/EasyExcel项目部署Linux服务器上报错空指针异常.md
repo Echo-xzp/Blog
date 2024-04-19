@@ -1,17 +1,30 @@
 ---
 title: EasyExcel项目部署Linux服务器上报错空指针异常
-keywords: [EasyExcel,Linux,空指针异常,Spring,Windows,docker]
-date: 2024-04-19 10:35:20
-tags: [EasyExcel,Linux,Spring,Java,docker]
+keywords:
+  - EasyExcel
+  - Linux
+  - 空指针异常
+  - Spring
+  - Windows
+  - docker
+tags:
+  - EasyExcel
+  - Linux
+  - Spring
+  - Java
+  - docker
 categories: Java
+description: >-
+  EasyExcel项目部署Linux服务器上报错空指针异常;错误码为500的内部服务器异常，异常类型是：`java.lang.NullPointerException`，也就是空指针异常，而且报错信息竟然是无可用信息。日志根本看不出是什么原因造成了这个接口的错误。那么就看后台的日志吧，因为是通过`docker`部署的，那么直接`logs`查看日志：java.lang.NullPointerException:
+  null at sun.awt.FontConfiguration.getVersion(FontConfiguration.java:1264) at
+  sun.awt.FontConfiguration.readFontConfigFile(FontConfiguration.java:219) at
+  sun.awt.FontConfiguration.init(FontConfiguration.java:107) at
+  sun.awt.X11FontManager.createFontConfiguration(X11FontManager.java:774) at
+  sun.font.SunFontManager$2.run(SunFontManager.java:431)
+  结合上面的分析，可以知道，问题的根源就是：`alpine`的精简系统里面缺失基础字体！
+abbrlink: 507a0589
+date: 2024-04-19 10:35:20
 cover:
-description: EasyExcel项目部署Linux服务器上报错空指针异常;错误码为`500`的内部服务器异常，异常类型是：`java.lang.NullPointerException`，也就是**空指针异常**，而且报错信息竟然是无可用信息。日志根本看不出是什么原因造成了这个接口的错误。那么就看后台的日志吧，因为是通过`docker`部署的，那么直接`logs`查看日志：java.lang.NullPointerException: null
-        at sun.awt.FontConfiguration.getVersion(FontConfiguration.java:1264)
-        at sun.awt.FontConfiguration.readFontConfigFile(FontConfiguration.java:219)
-        at sun.awt.FontConfiguration.init(FontConfiguration.java:107)
-        at sun.awt.X11FontManager.createFontConfiguration(X11FontManager.java:774)
-        at sun.font.SunFontManager$2.run(SunFontManager.java:431)
-结合上面的分析，可以知道，问题的根源就是：`alpine`的精简系统里面缺失基础字体！
 ---
 
 # 问题描述
