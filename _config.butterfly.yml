@@ -949,14 +949,14 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: custom
 
   # Add version number to url, true or false
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://npm.elemecdn.com/${name}@latest/${file}
 
   option:
     # main_css:
@@ -997,8 +997,8 @@ CDN:
     pangu: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/pangu/4.0.7/pangu.min.js
     # fancybox_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css
     # fancybox: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js
-    fancybox_css: https://wuean.com/js/fancybox4.0.css
-    fancybox: https://wuean.com/js/fancybox4.0.js
+    # fancybox_css: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css
+    # fancybox: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js
     medium_zoom: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js
     snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
     snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
