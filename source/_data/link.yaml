@@ -9,7 +9,12 @@
       link: https://blog.june-pj.cn/
       avatar: https://img.june-pj.cn/img/avatar.webp
       descr: 遇事不决，可问春风
-      siteshot: https://img.june-pj.cn/img/siteshot.webp
+      siteshot: https://img.june-pj.cn/img/siteshot.webp{
+    - name: "Tianli"
+      desc: "自知之明是最可贵的知识！"
+      icon: "https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640"
+      link: "https://tianli-blog.club/"
+
 - class_name: 網站
   class_desc: 值得推薦的網站
   link_list:
