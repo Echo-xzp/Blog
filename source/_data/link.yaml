@@ -18,6 +18,15 @@
       link: https://lisui.top/
       avatar: https://s3.qjqq.cn/3/64de148060f7b.webp!color
       descr: 生而无畏，站至终章
+    - name: 清羽飞扬
+      link: https://blog.qyliu.top/
+      avatar: https://blog.qyliu.top/info/avatar.ico
+      descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+    - name: Ariasakaの小窝
+      link: https://blog.yaria.top
+      avatar: https://weavatar.com/avatar/795ce413eb6c7485954b78283ffa3e00
+      descr: 人有悲欢离合 月有阴晴圆缺
+      siteshot: https://vercel.yaria.top/img/siteshot.png
 - class_name: 網站
   class_desc: 值得推薦的網站
   link_list:
