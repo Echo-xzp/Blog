@@ -1,9 +1,17 @@
 ---
 title: Linux中对CPU加压的思考
-keywords: [Linux,CPU,stress,压力测试]
-date: 2024-07-21 10:06:21
-tags: [Linux,CPU,stress]
+keywords:
+  - Linux
+  - CPU
+  - stress
+  - 压力测试
+tags:
+  - Linux
+  - CPU
+  - stress
 categories: Linux
+abbrlink: f5b536c5
+date: 2024-07-21 10:06:21
 cover:
 description:
 ---

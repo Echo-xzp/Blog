@@ -1,9 +1,25 @@
 ---
 title: 关于DNS的学习记录 其一
-keywords: [DNS,TCP,UDP,tcpdump,named,Linux,dig]
-date: 2024-08-04 19:25:03
-tags: [DNS,TCP,UDP,tcpdump,named,Linux,dig,计算机网络]
+keywords:
+  - DNS
+  - TCP
+  - UDP
+  - tcpdump
+  - named
+  - Linux
+  - dig
+tags:
+  - DNS
+  - TCP
+  - UDP
+  - tcpdump
+  - named
+  - Linux
+  - dig
+  - 计算机网络
 categories: 计算机网络
+abbrlink: 94d49d67
+date: 2024-08-04 19:25:03
 cover:
 description:
 ---

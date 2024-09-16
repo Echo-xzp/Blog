@@ -1,9 +1,18 @@
 ---
 title: Linux中Cron定时任务的踩坑
-keywords: [CRON,corn,Linux,定时任务]
-date: 2024-07-28 16:57:58
-tags: [CRON,corn,Linux,定时任务]
+keywords:
+  - CRON
+  - corn
+  - Linux
+  - 定时任务
+tags:
+  - CRON
+  - corn
+  - Linux
+  - 定时任务
 categories: Linux
+abbrlink: ec44b35f
+date: 2024-07-28 16:57:58
 cover:
 description:
 ---
