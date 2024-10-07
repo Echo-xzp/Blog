@@ -1,5 +1,5 @@
 ---
-title: 离线syslog踩坑记录
+title: 离线编译syslog踩坑记录
 keywords: [Linux,syslog,glib,pcre,离线编译,syslog-ng]
 date: 2024-09-02 21:21:57
 tags: [Linux,syslog,glib,pcre,离线编译,syslog-ng]
